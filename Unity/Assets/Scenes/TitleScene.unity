@@ -478,9 +478,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.33378747
+    x: 0.038298517
     y: 0
-    width: 0.33242506
+    width: 0.92340297
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 963194227}
-  aspectVec: {x: 480, y: 800}
+  aspectVec: {x: 800, y: 480}
 --- !u!1 &1365915053
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 480, y: 800}
+  m_SizeDelta: {x: 1440, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365915055
 MonoBehaviour:
