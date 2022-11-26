@@ -1,25 +1,23 @@
 using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using Assert = UnityEngine.Assertions.Assert;
 
-public class NewTestScriptPlay
+// テスト用クラス
+public class HogeComponentTest
 {
-    // A Test behaves as an ordinary method
-    [Test]
-    public void NewTestScriptPlaySimplePasses()
-    {
-        // Use the Assert class to test conditions
-    }
-
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
     [UnityTest]
-    public IEnumerator NewTestScriptPlayWithEnumeratorPasses()
+    public IEnumerator CountTest()
     {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
+        var go = new GameObject("Hoge");
+        var hoge = go.AddComponent<HogeComponent>();
+
+        // Start()前
+        Assert.AreEqual(0, hoge.count);
+
         yield return null;
+
+        // Start()後
+        Assert.AreEqual(1, hoge.count);
     }
 }
